@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.javidanhajizada.myapplication.EditDataActivity">
+
+    <RelativeLayout
+        android:layout_width="380dp"
+        android:layout_height="502dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="3dp">
+
+        <EditText
+            android:id="@+id/editConSurname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editConNumber"
+            android:layout_below="@+id/editConName"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="false"
+            tools:ignore="HardcodedText,LabelFor" />
+
+        <EditText
+            android:id="@+id/editConName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="17dp"
+            android:layout_marginTop="58dp"
+            android:autoLink="none"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textAllCaps="false"
+            android:textIsSelectable="false"
+            android:visibility="visible"
+            tools:ignore="HardcodedText,LabelFor,UnknownId" />
+
+        <EditText
+            android:id="@+id/editConNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editConName"
+            android:layout_below="@+id/editConSurname"
+            android:ems="10"
+            android:inputType="phone"
+            tools:ignore="HardcodedText,LabelFor" />
+
+        <EditText
+            android:id="@+id/editConBirthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editConNumber"
+            android:layout_below="@+id/editConNumber"
+            android:ems="10"
+            android:inputType="date"
+            tools:ignore="HardcodedText,LabelFor" />
+
+        <Button
+            android:id="@+id/saveConnBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/createConnBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Save"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editConSurname"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/editConName"
+            android:layout_toStartOf="@+id/editConName"
+            android:text="Name:"
+            android:textAlignment="viewEnd"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editConNumber"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2"
+            android:layout_toStartOf="@+id/saveConnBtn"
+            android:text="Surname:"
+            android:textAlignment="viewEnd"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/editConBirthday"
+            android:layout_alignEnd="@+id/textView4"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView4"
+            android:text="Phone Number:"
+            android:textAlignment="viewEnd"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editConBirthday"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView5"
+            android:layout_toStartOf="@+id/editConNumber"
+            android:text="Birth Date:"
+            android:textAlignment="viewEnd"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/deleteConBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/saveConnBtn"
+            android:layout_alignEnd="@+id/editConBirthday"
+            android:layout_marginEnd="19dp"
+            android:text="Delete"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/createConnBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editConBirthday"
+            android:layout_marginTop="11dp"
+            android:layout_toEndOf="@+id/textView6"
+            android:text="Add"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
